@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="imgs/favicon.ico">
+    <title>Murat Gocmen &#8211; Software Engineer</title>
+    <meta charset=utf-8>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/index-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Poiret+One|Oswald:400,300|Roboto+Condensed:300italic,400,300|Open+Sans+Condensed:300|Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/simplegrid.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+<body>
+  <div id="wrapper-index">
+    <div id="background-photo">
+     <span id="test-text"><center>SOFTWARE ENGINEER<br><span id="test-text2">Murat Gocmen</div>
+
+
+        <nav class="col-1-1 nav-index">
+          <span id="home-float-to-left">
+                  <a href="./index.html">
+                    <span id="current-page">
+                      <span class="brand-blue-font">MURAT</span>
+                      <span class="brand-white-font">GOCMEN</span>
+                    </span>
+                  </a>
+                </span>
+                  <span id="home-float-to-right">
+                    <a href="#resumesection">resume</a>
+                    <a href="#projectspage">portfolio</a>
+                    <a href="#aboutmepage">about</a>
+                  </span>
+                </nav>
+
+
+      <div class="box col-1-1" data-type="parallax"><a NAME="aboutmepage"></a>
+          <div class="box-text">  <span class="box-header"> <h4><center>ABOUT ME</center></h4></span>
+            <p> I'm a Software Engineer currently working in San Francisco, CA. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores, eius quia voluptatibus? Voluptate aut quisquam laboriosam possimus saepe necessitatibus sequi, soluta atque nemo beatae distinctio dolorum doloremque neque itaque dolorem? Quasi incidunt alias sit accusantium quae optio ullam expedita.</p>
+
+          </div>
+  </div>
+<!--
+      <div class="col-1-1 box-image" data-type="parallax">
+           <span class="box-image-header"> <h4><center>&nbsp; &nbsp;"Software is a great combination between artistry and engineering."<br></span><span class="box-image-font">- Bill Gates </center> </span></h4> </div> -->
+ <div class="divider"></div>
+
+    <div class="col-1-1 projects-section-main-1">
+        <a NAME="projectspage"></a>
+            <span class="projects-section-header">
+             <center> <h3>PORTFOLIO</h3>
+
+          <div class="project-container-images">
+
+            <div class="col-1-3">
+              <!-- <h5>ConcertMatch</h5> -->
+                <img onclick="imagePopup()" id="portfolio-view" class ="my-images" alt="Portfolio View and Inbox" src="./imgs/portfolio-view-and-inbox.png">
+            </div>
+
+            <div class="col-1-3">
+              <!-- <h5>NIA</h5> -->
+                <img onclick="imagePopup()" id="ribbon-calendar" class="my-images" alt="Ribbon Calendar, Portfolio" src="./imgs/ribbon-calendar.png">
+            </div>
+
+            <div class="col-1-3">
+              <!-- <h5>Pinterest Redesign Concept</h5> -->
+              <img onclick="imagePopup()" id="mobile-view" class="my-images" alt="Mobile Calendar and Dashboard" src="./imgs/mobile-view.png">
+            </div>
+        </div>
+
+        <div class="project-container-images">
+             <div class="col-1-3">
+              <!-- <h5>Ruby on Rails Twitter App</h5> -->
+              <a target="_blank" href="https://easyproduce.herokuapp.com/"><img src="./imgs/produce-delivery-service.png"></a>
+            </div>
+
+             <div class="col-1-3">
+              <!-- <h5>The Streak</h5> -->
+              <a href="https://tangomango.herokuapp.com/"><img src="./imgs/argentine-tango-events.png"></a>
+            </div>
+            </div>
+            </center>
+         </div>
+         <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+  </div>
+
+
+<!--       <div class="col-1-1 box-image2" data-type="parallax">
+           <span class="box-image-header"> <h4><center>“Innovation distinguishes between a leader and a follower.” <br></span><span class="box-image-font">- Steve Jobs </center> </span></h4></div>
+ -->
+
+<div class="divider"></div>
+
+     <div class="col-1-1 box-skills">
+      <a NAME="resumesection"> </a>
+          <div class="box-text-skills col-1-1">  <span class="box-header-skills"><br><br>
+               <span class="resume-update"><img src="./imgs/resume-2015.png" alt="resume"></span>
+          </span> </div>
+  </div>
+
+<div class="col-1-1 projects-section-main">
+  <span class="projects-section-header-white"><center>
+    <h2 class="white">View my recent projects on<br><br>
+      <span class="square-header"><a href="https://github.com/muratdbc">GitHub</a></span></h2>
+  </center>
+   </div>
+  </div>
+
+      <div class="col-1-1 footer-home">
+        <div>
+            <a href="https://www.linkedin.com/in/mgocmen"><img src="./imgs/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/muratdbc"><img src="./imgs/github.png" alt="github"></a>
+            <a href="https://twitter.com/GocmenMurat"><img src="./imgs/twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/murat.gocmen.39"><img src="./imgs/facebook.png" alt="Fb"></a>
+        </div>
+     </div>
+
+
+  </div>
+
+
+<script type="text/javascript" src="./ParallaxScroll.js"></script>
+<script type="text/javascript" src"./app.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+                      $(".contactLink").click(function(){
+                          if ($("#contactForm").is(":hidden")){
+                              $("#contactForm").slideDown("slow");
+                          }
+                          else{
+                              $("#contactForm").slideUp("slow");
+                          }
+                      });
+          });
+          function closeForm(){
+              $("#messageSent").show("slow");
+              setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+          }
+          $(document).ready(function() {
+
+
+            function filterPath(string) {
+              return string
+                .replace(/^\//,'')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+                .replace(/\/$/,'');
+            }
+            $('a[href*=#]').each(function() {
+              if ( filterPath(location.pathname) == filterPath(this.pathname)
+              && location.hostname == this.hostname
+              && this.hash.replace(/#/,'') ) {
+                var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                 if ($target) {
+                   var targetOffset = $target.offset().top;
+                   $(this).click(function() {
+                     $('html, body').animate({scrollTop: targetOffset}, 1000);
+                     var d = document.createElement("div");
+                  d.style.height = "101%";
+                  d.style.overflow = "hidden";
+                  document.body.appendChild(d);
+                  window.scrollTo(0,scrollToM);
+                  setTimeout(function() {
+                  d.parentNode.removeChild(d);
+                      }, 10);
+                     return false;
+                   });
+                }
+              }
+            });        
+
+          });
+</script>
+<script type="text/javascript" src="./app.js"></script>
+
+
+  </body>
+</html>
