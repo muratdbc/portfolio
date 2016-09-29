@@ -10,12 +10,26 @@ function imagePopup(){
                   modalImg.src = this.src;
                   captionText.innerHTML = this.alt;
               }
-    
+
               // Get the <span> element that closes the modal
               var span = document.getElementsByClassName("close")[0];
-    
+
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
                 modal.style.display = "none";
             }
+ }
+
+ function submitForm(){
+   // document.getElementById("id="exampleInputName1"").submit();
+   var data ={
+      name:   document.getElementById("exampleInputName1").value,
+      email:  document.getElementById("exampleInputEmail1").value,
+    formdata: document.getElementById("formData").value,
+   }
+   console.log(data)
+   document.getElementById("exampleInputName1").value=""
+   document.getElementById("exampleInputEmail1").value=""
+   document.getElementById("formData").value=""
+
  }

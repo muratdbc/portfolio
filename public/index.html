@@ -7,6 +7,7 @@
       <link rel="stylesheet" type="text/css" href="./stylesheets/index-stylesheet.css">
       <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Poiret+One|Oswald:400,300|Roboto+Condensed:300italic,400,300|Open+Sans+Condensed:300|Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="./stylesheets/simplegrid.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
@@ -28,7 +29,7 @@
                 </a>
               </span>
               <span id="home-float-to-right">
-                <a href="#resumesection">resume</a>
+                <a href="#resumesection">contact</a>
                 <a href="#projectspage">portfolio</a>
                 <a href="#aboutmepage">about</a>
               </span>
@@ -36,7 +37,7 @@
         </div>
         <div class="box col-1-1" data-type="parallax"><a NAME="aboutmepage"></a>
             <div class="box-text">  <span class="box-header"> <h4><center>ABOUT ME</center></h4></span>
-              <p> I'm a Software Engineer currently working in San Francisco, CA. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores, eius quia voluptatibus? Voluptate aut quisquam laboriosam possimus saepe necessitatibus sequi, soluta atque nemo beatae distinctio dolorum doloremque neque itaque dolorem? Quasi incidunt alias sit accusantium quae optio ullam expedita.</p>
+              <p style="margin-left: 10rem;"> I'm a Software Engineer currently working in San Francisco, CA. </p>
             </div>
         </div>
         <div class="divider"></div>
@@ -77,11 +78,40 @@
           </div>
         </div>
         <div class="divider"></div>
-        <div class="col-1-1 box-skills">
-          <a NAME="resumesection"> </a>
-          <div class="box-text-skills col-1-1">  <span class="box-header-skills"><br><br>
-            <span class="resume-update"><img src="./imgs/resume-2016.png" alt="resume"></span>
-          </span> </div>
+        <div class="col-1-1 ">
+          <div class="col-md-offset-4 col-md-4 ">
+              <form id="contactForm">
+                    <div style="padding:20px;">
+                    <h2>Contact Form</h2>
+                    <br><br>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                      </div>
+
+                      <div class="form-group">
+                       <label for="exampleInputEmail1">Form</label>
+                        <textarea class="form-control" id="formData"rows="8" required></textarea>
+                      </div>
+                      <div>
+                        <button type="button"   onclick="submitForm()" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-default">Submit</button>
+                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                          <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4> </div>
+                              <div class="modal-body"> Thank you for your Submission! </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
+          </div>
         </div>
         <div class="col-1-1 projects-section-main">
           <span class="projects-section-header-white"><center>
@@ -94,12 +124,15 @@
           <div>
             <a href="https://www.linkedin.com/in/mgocmen"><img src="./imgs/linkedin.png" alt="linkedin"></a>
             <a href="https://github.com/muratdbc"><img src="./imgs/github.png" alt="github"></a>
+            <a href="mailto:murat.dbc@gmail.com" target="_top"><img src="./imgs/mail.png" alt="Email"></a>
             <a href="https://twitter.com/GocmenMurat"><img src="./imgs/twitter.png" alt="twitter"></a>
             <a href="https://www.facebook.com/murat.gocmen.39"><img src="./imgs/facebook.png" alt="Fb"></a>
           </div>
         </div>
         </div>
     <script type="text/javascript" src="./js/ParallaxScroll.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>
+

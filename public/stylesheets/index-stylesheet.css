@@ -74,7 +74,7 @@ body {
  font-family: 'Oswald', sans-serif;
  font-weight: 300;
  font-size: 85px;
- color: #0b3254;
+ color: #00AADE;
 }
 
 /* Side page logo */
@@ -125,7 +125,7 @@ body {
 
 .nav-index {
     /*background-color: #0b3254;*/
-    background-color: black;
+    background-color: #00AADE;
     position: fixed;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -138,6 +138,7 @@ body {
     line-height: 20px;
     width: 100%;
     min-width: 100%;
+    z-index: 1;
 }
 
 #current-page {
@@ -461,7 +462,7 @@ text-align: left;
 }
 
 .projects-section-main {
-  background-color: #0b3254;
+  background-color: #00AADE;
   min-height: 450px;
   color: white;
   text-align: justify;
@@ -778,7 +779,7 @@ text-align: left;
   color: white;
   padding-top: 2%;
   padding-bottom: 1%;
-  background-color: #000000;
+  background-color: white;
   z-index: 999;
 }
 
