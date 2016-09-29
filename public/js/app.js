@@ -1,35 +1,13 @@
 function imagePopup(){
-            console.log("Murat")
             var modal = document.getElementById('myModal');
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
             var img = document.getElementById(event.target.getAttribute("id"));
             var modalImg = document.getElementById("img01");
             var captionText = document.getElementById("caption");
-              img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  captionText.innerHTML = this.alt;
-              }
-
-              // Get the <span> element that closes the modal
-              var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+            var span = document.getElementsByClassName("close")[0];
             span.onclick = function() {
                 modal.style.display = "none";
             }
- }
-
- function submitForm(){
-   // document.getElementById("id="exampleInputName1"").submit();
-   var data ={
-      name:   document.getElementById("exampleInputName1").value,
-      email:  document.getElementById("exampleInputEmail1").value,
-    formdata: document.getElementById("formData").value,
-   }
-   console.log(data)
-   document.getElementById("exampleInputName1").value=""
-   document.getElementById("exampleInputEmail1").value=""
-   document.getElementById("formData").value=""
-
  }
